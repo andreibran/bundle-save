@@ -1,0 +1,142 @@
+/* Bundle Campaign Admin Styles */
+.bundle-campaign-basics .field-row,
+.bundle-campaign-style .field-row {
+    margin: 1em 0;
+}
+
+.bundle-campaign-basics label,
+.bundle-campaign-style label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.bundle-campaign-basics .description {
+    color: #666;
+    font-weight: normal;
+    margin-left: 0.5em;
+}
+
+/* Targeting */
+.bundle-campaign-targeting fieldset {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 0;
+}
+
+.bundle-campaign-targeting legend {
+    font-weight: 600;
+    padding: 0 0.5em;
+}
+
+.target-type-selector {
+    margin-bottom: 1em;
+}
+
+.target-type-selector label {
+    margin-right: 1.5em;
+}
+
+.categories-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+}
+
+.categories-list label {
+    display: block;
+    margin: 0.3em 0;
+}
+
+/* Offers Table */
+.bundle-offers-table {
+    margin: 1em 0;
+}
+
+.bundle-offers-table th {
+    text-align: left;
+    padding: 8px;
+}
+
+.bundle-offers-table td {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.bundle-offers-table input[type="number"] {
+    width: 70px;
+}
+
+.bundle-offer-row:focus-within {
+    background: #f7f7f7;
+}
+
+.add-offer {
+    margin-top: 1em;
+}
+
+/* Style Settings */
+.bundle-campaign-style .wp-picker-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bundle-campaign-style .unit {
+    margin-left: 0.5em;
+    color: #666;
+}
+
+/* Preview */
+.bundle-campaign-preview iframe {
+    background: #fff;
+    margin-top: 1em;
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid #ddd;
+}
+
+/* Accessibility */
+.bundle-campaign-targeting input:focus,
+.bundle-campaign-targeting select:focus,
+.bundle-offers-table input:focus,
+.bundle-offers-table select:focus,
+.bundle-campaign-style input:focus,
+.bundle-campaign-style select:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: 2px solid transparent;
+}
+
+/* WCAG 2.2 AA Compliance */
+.bundle-campaign-basics label,
+.bundle-campaign-targeting legend,
+.bundle-offers-table th,
+.bundle-campaign-style label {
+    color: #1e1e1e; /* Ensures 4.5:1 contrast ratio */
+}
+
+.bundle-campaign-basics .description,
+.bundle-campaign-style .unit {
+    color: #595959; /* Ensures 4.5:1 contrast ratio */
+}
+
+/* Focus Indicators */
+.bundle-campaign-targeting input[type="radio"]:focus,
+.bundle-campaign-targeting input[type="checkbox"]:focus {
+    outline: 2px solid #2271b1;
+    outline-offset: 2px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .bundle-offers-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .bundle-campaign-targeting .target-type-selector label {
+        display: block;
+        margin: 0.5em 0;
+    }
+}
