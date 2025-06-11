@@ -1,0 +1,59 @@
+/* Estilos para a Tabela de Tiers */
+#bs-tiers-table {
+    width: 100%;
+    margin-top: 1em;
+}
+
+#bs-tiers-table th {
+    text-align: left;
+    white-space: nowrap; /* Impede que os títulos do cabeçalho quebrem linha */
+}
+
+#bs-tiers-table .sort-handle {
+    width: 30px;
+    cursor: move;
+    text-align: center;
+    color: #999;
+}
+
+#bs-tiers-table .bs-tier-row td {
+    vertical-align: middle;
+    padding: 8px 10px;
+}
+
+#bs-tiers-table input[type="text"],
+#bs-tiers-table select {
+    width: 100%;
+}
+
+/* --- NOVOS ESTILOS PARA AS COLUNAS --- */
+#bs-tiers-table .column-qty { width: 8%; }
+#bs-tiers-table .column-title { width: 25%; }
+#bs-tiers-table .column-discount-type { width: 15%; }
+#bs-tiers-table .column-discount-value { width: 10%; }
+#bs-tiers-table .column-badge { width: 15%; }
+#bs-tiers-table .column-label { width: 19%; }
+#bs-tiers-table .actions-column { width: 8%; text-align: right; }
+
+#bs-tiers-table .wc_input_price {
+    width: 100%;
+}
+
+/* Placeholder para arrastar */
+.bs-tier-placeholder {
+    height: 50px;
+    background-color: #f0f0f0;
+    border: 2px dashed #ccc;
+}
+
+/* Campos condicionais na lateral */
+.bs-conditional-field {
+    margin-top: 10px;
+}
+
+/* Botão de Adicionar Nível */
+#add_bs_tier {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
